@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  width: 100%;
+  background-color: #424558;
+}
+nav > ul {
+  margin: 0px;
+  padding: 0px;
+}
+nav > ul > li {
+  list-style-type: none;
+  float: left;
+  position: relative;
+}
+nav > ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav input[type="checkbox"] {
+  display: none;
+}
+nav label {
+  display: none;
+}
+nav > ul > li:hover a {
+  padding: 15px 30px 20px 30px;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: beige;
+}
+nav li:hover {
+  background-color: crimson;
+}
+.cal:hover {
+  border-top: 5px solid#e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+.password:hover {
+  border-top: 5px solid #0070bb;
+  background-color: rgba(000, 112, 192, 0.15);
+}
+.quiz:hover {
+  border-top: 5px solid #bbb;
+  background-color: rgba(156, 124, 124, 015);
+}
+nav input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+@media only screen and (max-width: 780px) {
+  .menu {
+    display: block;
+    color: white;
+    background-color: rgba(29, 197, 151, 015);
+    text-align: center;
+    padding: 12px 0px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li:hover a {
+    padding: 10px 0px;
+  }
+}
